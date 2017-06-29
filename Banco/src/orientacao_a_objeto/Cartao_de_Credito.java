@@ -1,6 +1,9 @@
 package orientacao_a_objeto;
 
+import java.util.Date;
+
 public class Cartao_de_Credito {
 	int numero;
-	String data;
+	Date data;
+	Cliente cliente;
 }

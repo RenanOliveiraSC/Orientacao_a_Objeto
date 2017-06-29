@@ -1,7 +1,8 @@
 package orientacao_a_objeto;
 
 public class Conta {
-	int num;
+	String num;
 	double saldo;
-	double limite = 100;
+	double limite = 100d;
+	Agencia agencia;
 }
