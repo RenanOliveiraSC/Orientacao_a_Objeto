@@ -14,9 +14,9 @@ public class TesteTurma {
 		tm2.serie = "5";
 		tm2.sigla = 'C';
 		tm2.tpEnsino = "Ensino Médio";
-		System.out.println("Perído: " + tm1.periodo + "  Série: " + tm1.serie + "  Sigla: " + tm1.sigla + "  Ensino: "
+		System.out.println("Perído: " + tm1.periodo + "  Série: " + tm1.serie + "  Sigla: " + tm1.sigla + "  Ensino:  "
 				+ tm1.tpEnsino);
-		System.out.println("Perído: " + tm2.periodo + "  Série: " + tm2.serie + "  Sigla: " + tm2.sigla + "  Ensino: "
+		System.out.println("Perído: " + tm2.periodo + "  Série: " + tm2.serie + "  Sigla: " + tm2.sigla + "  Ensino:  "
 				+ tm2.tpEnsino);
 	}
 }
