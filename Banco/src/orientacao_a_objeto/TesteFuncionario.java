@@ -13,8 +13,11 @@ public class TesteFuncionario {
 		Funcionario func2 = new Funcionario();
 		func2.nome = "Marcos";
 		func2.salario = 1200d;
-		System.out.println("Funcionário: " + func1.nome + "  Salário: R$ " + df.format(func1.salario));
-		System.out.println("Funcionário: " + func2.nome + "  Salário: R$ " + df.format(func2.salario));
+		
+		System.out.println(funcionario.);
+		
+		//System.out.println("Funcionário: " + func1.nome + "  Salário: R$ " + df.format(func1.salario));
+		//System.out.println("Funcionário: " + func2.nome + "  Salário: R$ " + df.format(func2.salario));
 	}
 
 }
