@@ -6,18 +6,23 @@ public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		DecimalFormat df = new DecimalFormat("#0.00");
+
 		Funcionario func1 = new Funcionario();
-		func1.nome = "Marcos";
-		func1.salario = 980d;
+		func1.nome = "Joaquim";
+		func1.salario = 1500d;
 
 		Funcionario func2 = new Funcionario();
-		func2.nome = "Marcos";
-		func2.salario = 1200d;
-		
-		System.out.println(funcionario.);
-		
-		//System.out.println("Funcionário: " + func1.nome + "  Salário: R$ " + df.format(func1.salario));
-		//System.out.println("Funcionário: " + func2.nome + "  Salário: R$ " + df.format(func2.salario));
+		func2.nome = "Maria";
+		func2.salario = 1800d;
+
+		Funcionario detalhes = new detalhes();
+		detalhes = detalhes;
+
+		System.out.println(
+				"Funcionário: " + func1.nome + "\nSalário Atual: " + df.format(func1.salario) + "\nDetalhes: ");
+		System.out
+				.println("Funcionário: " + func2.nome + "\nSalário Atual: " + df.format(func2.salario) + "\nDetalhes ");
+
 	}
 
 }
