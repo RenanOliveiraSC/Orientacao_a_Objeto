@@ -13,8 +13,7 @@ public class TesteClienteCartaoCredito {
 		cliente.codigo = 1;
 		cliente.nome = "João";
 
-		Cartao_de_Credito cartao = new Cartao_de_Credito();
-		cartao.numero = 123456;
+		Cartao_de_Credito cartao = new Cartao_de_Credito(123456);
 		cartao.data = sdf.parse("01/01/2015");
 
 		// vincular o cliente ao cartão de crédito

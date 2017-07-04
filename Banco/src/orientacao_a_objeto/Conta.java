@@ -3,12 +3,25 @@ package orientacao_a_objeto;
 import java.text.DecimalFormat;
 
 public class Conta {
+	DecimalFormat df = new DecimalFormat("#0.00");
+
 	int num;
 	double saldo;
 	double limite = 100d;
 	Agencia agencia;
+	string refe;
 
-	DecimalFormat df = new DecimalFormat("#0.00");
+	// Construtor
+	public Conta(Agencia agencia) {
+		this.agencia = agencia;
+
+		
+	//Construtor
+	public Conta(String refe) {
+		this.refe = refe;
+	}
+	
+	}
 
 	public void deposito(double valor) {
 
@@ -32,7 +45,7 @@ public class Conta {
 		return extrato;
 	}
 
-	public double consultarSaldoDisponivel(){
+	public double consultarSaldoDisponivel() {
 		return this.saldo + this.limite;
 	}
 }

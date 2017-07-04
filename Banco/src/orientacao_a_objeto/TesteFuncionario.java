@@ -1,11 +1,8 @@
 package orientacao_a_objeto;
 
-import java.text.DecimalFormat;
-
 public class TesteFuncionario {
 
 	public static void main(String[] args) {
-		DecimalFormat df = new DecimalFormat("#0.00");
 
 		Funcionario func1 = new Funcionario();
 		func1.nome = "Joaquim";
@@ -15,13 +12,11 @@ public class TesteFuncionario {
 		func2.nome = "Maria";
 		func2.salario = 1800d;
 
-		Funcionario detalhes = new detalhes();
-		detalhes = detalhes;
+		func1.aumentarSalario(100d);
+		func2.aumentarSalario(100d);
 
-		System.out.println(
-				"Funcionário: " + func1.nome + "\nSalário Atual: " + df.format(func1.salario) + "\nDetalhes: ");
-		System.out
-				.println("Funcionário: " + func2.nome + "\nSalário Atual: " + df.format(func2.salario) + "\nDetalhes ");
+		System.out.println(func1.consultardados());
+		System.out.println(func2.consultardados());
 
 	}
 

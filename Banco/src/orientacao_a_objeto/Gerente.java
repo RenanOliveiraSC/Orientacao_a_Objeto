@@ -2,19 +2,19 @@ package orientacao_a_objeto;
 
 import java.text.DecimalFormat;
 
-public class Funcionario {
+public class Gerente {
+
 	DecimalFormat df = new DecimalFormat("#0.00");
+
 	String nome;
 	double salario;
 
 	public void aumentarSalario(double valor) {
-
-		this.salario += valor;
+		this.salario = salario * ((valor / 100) + 1);
 	}
 
-	public String consultardados() {
-		return "Nome: " + this.nome + "\nSalário: R$ " + df.format(this.salario);
-
+	public void aumentarSalario() {
+		this.aumentarSalario(10);
 	}
 
 }
