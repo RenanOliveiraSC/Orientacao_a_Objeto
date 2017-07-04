@@ -7,6 +7,10 @@ public class Funcionario {
 	String nome;
 	double salario;
 
+	public Funcionario() {
+		this.salario = 1000d;
+	}
+
 	public void aumentarSalario(double valor) {
 
 		this.salario += valor;

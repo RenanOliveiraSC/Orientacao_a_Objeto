@@ -9,18 +9,10 @@ public class Conta {
 	double saldo;
 	double limite = 100d;
 	Agencia agencia;
-	string refe;
 
 	// Construtor
 	public Conta(Agencia agencia) {
 		this.agencia = agencia;
-
-		
-	//Construtor
-	public Conta(String refe) {
-		this.refe = refe;
-	}
-	
 	}
 
 	public void deposito(double valor) {
