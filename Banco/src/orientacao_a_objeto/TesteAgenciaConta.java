@@ -10,8 +10,8 @@ public class TesteAgenciaConta {
 		Agencia agencia = new Agencia(1234);
 
 		Conta conta = new Conta(1000);
-		conta.num = 123456;
-		conta.saldo = 1500d;
+		conta.setNum(123456);
+		conta.setSaldo(1500d);
 
 		conta.agencia = agencia;
 

@@ -5,16 +5,51 @@ import java.text.DecimalFormat;
 public class Conta {
 	DecimalFormat df = new DecimalFormat("#0.00");
 
-	int num;
-	double saldo;
-	double limite = 100d;
+	private int num;
+	private double saldo;
+	private double limite = 100d;
 	Agencia agencia;
 	static double tarifa = 2.10;
 	static int contador;
+	private int idConta;
+	
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	public int getIdConta() {
+		return idConta;
+	}
+
+	public void setIdConta(int idConta) {
+		this.idConta = idConta;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	// Contrutor
 	public Conta() {
-		contador++;
+		Conta.contador++;
+		this.idConta = Conta.contador;
 	}
 
 	public static void zeraConta() {
