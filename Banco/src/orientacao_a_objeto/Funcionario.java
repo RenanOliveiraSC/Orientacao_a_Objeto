@@ -6,6 +6,7 @@ public class Funcionario {
 	DecimalFormat df = new DecimalFormat("#0.00");
 	String nome;
 	double salario;
+	static double valeRefeicaoDiario = 19;
 
 	public Funcionario() {
 		this.salario = 1000d;

@@ -9,10 +9,29 @@ public class Conta {
 	double saldo;
 	double limite = 100d;
 	Agencia agencia;
+	static double tarifa = 2.10;
+	static int contador;
+
+	// Contrutor
+	public Conta() {
+		contador++;
+	}
+
+	public static void zeraConta() {
+		System.out.println("O numero de contas criadas é de: " + Conta.contador);
+		Conta.contador = 0;
+	}
 
 	// Construtor
 	public Conta(Agencia agencia) {
+		this();
 		this.agencia = agencia;
+	}
+
+	// Construtor
+	public Conta(int num) {
+		this();
+		this.num = num;
 	}
 
 	public void deposito(double valor) {
