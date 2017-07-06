@@ -6,14 +6,19 @@ public class Funcionario {
 	DecimalFormat df = new DecimalFormat("#0.00");
 	private String nome;
 	private double salario;
+
 	
 	static double valeRefeicaoDiario = 15;
-	
+	static double bonificacao;
 			
 	public static void reajustaValeRefeicaoDiario (double taxa) {
 		Funcionario.valeRefeicaoDiario = Funcionario.valeRefeicaoDiario * ((taxa/100)+1);
 	}
-
+	
+	public void bonificacao (double bonus) {
+		Funcionario.bonificacao = this.salario + Funcionario.bonificacao * ((bonus/100)+1);
+	}
+	
 	public String getNome() {
 		return nome;
 	}
