@@ -8,6 +8,12 @@ public class Funcionario {
 	double salario;
 	static double valeRefeicaoDiario = 19;
 
+	public static void reajustaValeRefeicaoDiario(double taxa) {
+		Funcionario.valeRefeicaoDiario += Funcionario.valeRefeicaoDiario * taxa;
+		Funcionario.reajustaValeRefeicaoDiario(0.5);
+
+	}
+
 	public Funcionario() {
 		this.salario = 1000d;
 	}
