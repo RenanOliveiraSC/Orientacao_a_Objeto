@@ -8,7 +8,7 @@ public class TesteFuncionario2 {
 		Scanner scanner = new Scanner(System.in);
 		Funcionario funcionario = new Funcionario();
 		System.out.println("Informa o nome do Funcionario:");
-		funcionario.nome = scanner.nextLine();
+		funcionario.setNome (scanner.nextLine());
 
 		int funcao = 1;
 		while (funcao != 0) {
@@ -21,11 +21,11 @@ public class TesteFuncionario2 {
 
 			case 1:
 				System.out.println("Qual o nome do funcionario?");
-				funcionario.nome = scanner.nextLine();
+				funcionario.setNome(scanner.nextLine());
 				break;
 			case 2:
 				System.out.println("Qual o Salário?");
-				funcionario.salario = Double.parseDouble(scanner.nextLine());
+				funcionario.setSalario(Double.parseDouble(scanner.nextLine()));
 				break;
 			case 3:
 				System.out.println(funcionario.consultardados());

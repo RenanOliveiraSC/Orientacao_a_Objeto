@@ -17,19 +17,19 @@ public class TesteTurmaAluno {
 		
 		//Criação do objeto Aluno com suas informações
 		Aluno aluno = new Aluno();
-		aluno.nome = "José";
-		aluno.rg = "123456";
-		aluno.data = sdf.parse("01/01/1995");
+		aluno.setNome("José");
+		aluno.setRg("123456");
+		aluno.setData(sdf.parse("01/01/1995"));
 		
 		//Criação do vínculo entre turma e aluno
-		aluno.turma = turma;
+		aluno.setTurma(turma);
 		
-		System.out.println("O aluno "+aluno.nome+
-				" com RG "+aluno.rg+
-				" que nasceu no dia "+sdf.format(aluno.data)+
-				" pertence a turma "+aluno.turma.sigla+
-				" do período "+ aluno.turma.periodo+
-				" da serie "+ aluno.turma.serie+
-				" do tipo de ensino "+aluno.turma.tpEnsino);
+		System.out.println("O aluno "+aluno.getNome()+
+				" com RG "+aluno.getRg()+
+				" que nasceu no dia "+sdf.format(aluno.getData())+
+				" pertence a turma "+aluno.getTurma().sigla+
+				" do período "+ aluno.getTurma().periodo+
+				" da serie "+ aluno.getTurma().serie+
+				" do tipo de ensino "+aluno.getTurma().tpEnsino);
 	}
 }

@@ -27,7 +27,7 @@ public class TesteArrays {
 			System.out.println(numero);
 		}
 		scanner.close();
-		System.out.print("\nA média é:" + media);
+		System.out.print("\nA média é: " + media);
 		scanner.close();
 
 		System.out.println("\nO maior número é o " + max);
