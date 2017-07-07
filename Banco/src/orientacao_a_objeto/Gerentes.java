@@ -5,6 +5,7 @@ public class Gerentes extends Funcionario {
 	private String nome;
 	private String senha;
 	
+		
 	public String getNome() {
 		return nome;
 	}

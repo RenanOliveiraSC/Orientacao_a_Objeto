@@ -6,18 +6,26 @@ public class Funcionario {
 	DecimalFormat df = new DecimalFormat("#0.00");
 	private String nome;
 	private double salario;
+	private double bnu;
+
 
 	
 	static double valeRefeicaoDiario = 15;
-	static double bonificacao;
+	
 			
 	public static void reajustaValeRefeicaoDiario (double taxa) {
 		Funcionario.valeRefeicaoDiario = Funcionario.valeRefeicaoDiario * ((taxa/100)+1);
 	}
 	
 	public void bonificacao (double bonus) {
-		Funcionario.bonificacao = this.salario + Funcionario.bonificacao * ((bonus/100)+1);
+		this.bnu = bonus;
+		this.salario = salario * ((10/100d)+1); 
 	}
+	
+	public void  bonificacao(){
+		this.bonificacao(10);
+	}
+	
 	
 	public String getNome() {
 		return nome;
@@ -45,9 +53,14 @@ public class Funcionario {
 	}
 
 	public String consultardados() {
-		return "Nome: " + this.nome + "\nSalário: R$ " + df.format(this.salario);
+		return "Nome: " + this.nome + "\nSalário: R$ " + df.format(this.salario) + "\nBonificação: R$ "+ df.format(this.bnu);
+	}
 	
+	public String info() {
+		String dados = "Nome Funcionario: " +this.nome+"\nSalário: R$ "+df.format(this.salario)+"\nBonificação: R$"+this.bnu;
+		return dados;
+	}
 		
 	}
 
-}
+
