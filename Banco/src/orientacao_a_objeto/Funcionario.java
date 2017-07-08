@@ -7,18 +7,19 @@ public class Funcionario {
 	private String nome;
 	private double salario;
 
-	
 	static double valeRefeicaoDiario = 15;
 	static double bonificacao;
-			
-	public static void reajustaValeRefeicaoDiario (double taxa) {
-		Funcionario.valeRefeicaoDiario = Funcionario.valeRefeicaoDiario * ((taxa/100)+1);
+
+	public static void reajustaValeRefeicaoDiario(double taxa) {
+		Funcionario.valeRefeicaoDiario += Funcionario.valeRefeicaoDiario * taxa;
+		Funcionario.reajustaValeRefeicaoDiario(0.5);
+
 	}
-	
-	public void bonificacao (double bonus) {
-		Funcionario.bonificacao = this.salario + Funcionario.bonificacao * ((bonus/100)+1);
+
+	public void bonificacao(double bonus) {
+		Funcionario.bonificacao = this.salario + Funcionario.bonificacao * ((bonus / 100) + 1);
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
@@ -35,12 +36,6 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
-	public static void reajustaValeRefeicaoDiario(double taxa) {
-		Funcionario.valeRefeicaoDiario += Funcionario.valeRefeicaoDiario * taxa;
-		Funcionario.reajustaValeRefeicaoDiario(0.5);
-
-	}
-
 	public Funcionario() {
 		this.salario = 1000d;
 	}
@@ -52,8 +47,7 @@ public class Funcionario {
 
 	public String consultardados() {
 		return "Nome: " + this.nome + "\nSalário: R$ " + df.format(this.salario);
-	
-		
+
 	}
 
 }
