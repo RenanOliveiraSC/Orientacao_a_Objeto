@@ -1,4 +1,6 @@
-package Polimorfismo;
+package classesAbstratas;
+
+import java.util.Date;
 
 public abstract class Conta {
 
@@ -6,6 +8,7 @@ public abstract class Conta {
 	private String agencia;
 	private String cliente;
 	private double saldo;
+	private Date diaDoAniversario;
 
 	public String getNumero() {
 		return numero;
@@ -39,5 +42,16 @@ public abstract class Conta {
 		this.cliente = cliente;
 	}
 
+	
+	public Date getDiaDoAniversario() {
+		return diaDoAniversario;
+	}
+
+	public void setDiaDoAniversario(Date diaDoAniversario) {
+		this.diaDoAniversario = diaDoAniversario;
+	}
+
+	public abstract void imprimeExtratoDetalhado();
+	
 	
 }

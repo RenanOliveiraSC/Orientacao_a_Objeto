@@ -1,4 +1,4 @@
-package Polimorfismo;
+package classesAbstratas;
 
 public class ContaPoupanca extends Conta {
 
@@ -18,6 +18,14 @@ public class ContaPoupanca extends Conta {
 	}
 	public void setAcrescimoJuros(double acrescimoJuros) {
 		this.acrescimoJuros = acrescimoJuros;
+	}
+	
+	
+	
+	@Override
+	public void imprimeExtratoDetalhado() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
