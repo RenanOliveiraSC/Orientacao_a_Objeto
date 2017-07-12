@@ -8,7 +8,7 @@ public class TesteFuncionario2 {
 		Scanner scanner = new Scanner(System.in);
 		Funcionario funcionario = new Funcionario();
 		System.out.println("Informa o nome do Funcionario:");
-		funcionario.setNome (scanner.nextLine());
+		funcionario.setNome(scanner.nextLine());
 
 		int funcao = 1;
 		while (funcao != 0) {
@@ -28,7 +28,7 @@ public class TesteFuncionario2 {
 				funcionario.setSalario(Double.parseDouble(scanner.nextLine()));
 				break;
 			case 3:
-				System.out.println(funcionario.consultardados());
+				System.out.println(funcionario.consultarDados());
 				break;
 			default:
 				System.out.println("Operação inválida!");
