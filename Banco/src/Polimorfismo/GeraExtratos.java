@@ -1,8 +1,8 @@
 package Polimorfismo;
 
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.text.DecimalFormat;
 
 public class GeraExtratos {
 
@@ -13,7 +13,7 @@ public class GeraExtratos {
 		DecimalFormat df = new DecimalFormat("#0.00");
 
 		Date agora = new Date();
-		System.out.println("Cliente: "+numero.getCliente());
+		System.out.println("Cliente: " + numero.getCliente());
 		System.out.println("Data: " + sdf.format(agora));
 		System.out.println("Agência: " + numero.getAgencia());
 		System.out.println("Conta: " + numero.getNumero());
