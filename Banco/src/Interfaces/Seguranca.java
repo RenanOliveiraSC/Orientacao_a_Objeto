@@ -4,7 +4,7 @@ public class Seguranca extends Funcionario {
 
 	private String turno;
 
-	private Seguranca() {
+	public Seguranca() {
 	}
 
 	public Seguranca(String nome, double salario, String usuario, String senha) {

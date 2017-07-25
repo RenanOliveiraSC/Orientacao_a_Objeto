@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class Cliente {
+public class Cliente implements Usuario {
 
 	private String usuario;
 	private String senha;
