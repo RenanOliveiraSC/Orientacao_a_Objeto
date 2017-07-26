@@ -14,7 +14,6 @@ public class TesteGeraExtratos {
 		contaCorrente.setLimite(1000d);
 		contaCorrente.setTaxaJuros(8d);
 		
-
 		ContaPoupanca contaPoupanca = new ContaPoupanca();
 		contaPoupanca.setCliente("Wagner");
 		contaPoupanca.setAgencia(45);
@@ -30,8 +29,7 @@ public class TesteGeraExtratos {
 		contaCorrente.saca(50d);
 		contaPoupanca.deposita(50d);
 		
-		
-
+        
 		GeraExtratos extratoC = new GeraExtratos();
 		extratoC.extrato(contaCorrente);
 	
