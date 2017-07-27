@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Interfaces;
+package collectionsJava;
 /**
  * 
  * @author Noturno

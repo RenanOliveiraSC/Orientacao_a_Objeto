@@ -1,11 +1,13 @@
 package classesAbstratas;
 
-public class ContaPoupanca extends Conta {
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+public class ContaPoupanca extends Conta {
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 	private double taxaAdm;
 	private double acrescimoJuros;
 	
-	 	
 	
 	public double getTaxaAdm() {
 		return taxaAdm;
@@ -24,7 +26,11 @@ public class ContaPoupanca extends Conta {
 	
 	@Override
 	public void imprimeExtratoDetalhado() {
-		// TODO Auto-generated method stub
+		System.out.println("EXTRATO DETALHADO DE CONTA CORRENTE");
+		Date agora = new Date();
+		System.out.println("DATA : " + sdf.format(agora));
+		System.out.println("SALDO : " + this.getSaldo());
+		System.out.println("ANIVERSÁRIO : " + this.getDiaDoAniversario());
 		
 	}
 	

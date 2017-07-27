@@ -8,11 +8,6 @@ public class ContaCorrente extends Conta {
 	private double taxaJuros;
 	private double limite;
 	
-	
-		
-	
-	
-	
 	public double getTaxaJuros() {
 		return taxaJuros;
 	}

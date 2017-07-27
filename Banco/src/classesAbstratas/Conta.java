@@ -10,6 +10,7 @@ public abstract class Conta {
 	private double saldo;
 	private Date diaDoAniversario;
 
+	//Construtor
 	public String getNumero() {
 		return numero;
 	}
@@ -52,6 +53,5 @@ public abstract class Conta {
 	}
 
 	public abstract void imprimeExtratoDetalhado();
-	
-	
+		
 }

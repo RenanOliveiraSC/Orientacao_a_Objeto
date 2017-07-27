@@ -16,14 +16,12 @@ public class TesteConta {
 		contaCorrente.setSaldo(15000d);
 		contaCorrente.setLimite(50000D);
 		
-		
 		ContaPoupanca contaPoupanca = new ContaPoupanca();
 		contaCorrente.setCliente("Ellen");
 		contaCorrente.setAgencia("014");
 		contaCorrente.setNumero("6516546");
 		contaCorrente.setSaldo(10000d);
 		contaCorrente.setLimite(20000d);
-		
 		
 		
 	}

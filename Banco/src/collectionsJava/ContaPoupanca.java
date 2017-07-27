@@ -1,8 +1,8 @@
-package Interfaces;
+package collectionsJava;
 
-public class ContaCorrente extends Conta {
+public class ContaPoupanca  extends Conta{
 
-	public double taxaJuros;
+	public double JurosAcrecimo;
 
 	@Override
 	public double saldo() {
@@ -21,12 +21,12 @@ public class ContaCorrente extends Conta {
 		
 	}
 
-	public double getTaxaJuros() {
-		return taxaJuros;
+	public double getJurosAcrecimo() {
+		return JurosAcrecimo;
 	}
 
-	public void setTaxaJuros(double taxaJuros) {
-		this.taxaJuros = taxaJuros;
+	public void setJurosAcrecimo(double jurosAcrecimo) {
+		JurosAcrecimo = jurosAcrecimo;
 	}
 	
 }

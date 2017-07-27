@@ -1,4 +1,4 @@
-package Interfaces;
+package collectionsJava;
 
 public class ContaCorrente extends Conta {
 

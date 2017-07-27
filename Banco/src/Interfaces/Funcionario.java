@@ -12,6 +12,15 @@ public abstract class Funcionario implements Usuario {
 	private String nome;
 	private double salario;
 	private double bonificacao;
+	private double novoValorSalario;
+
+	public double getNovoValorSalario() {
+		return novoValorSalario;
+	}
+
+	public void setNovoValorSalario(double novoValorSalario) {
+		this.novoValorSalario = novoValorSalario;
+	}
 
 	public static double valeRefeicaoDiario = 30;
 
@@ -52,12 +61,18 @@ public abstract class Funcionario implements Usuario {
 		this.bonificacao = bonificacao;
 	}
 
-	public void aumentarSalario(double taxa) {
+	public void aumentarSalarioT(double taxa) {
 		this.salario = this.salario * ((taxa / 100) + 1);
 	}
 
-	public void aumentarSalario() {
-		this.aumentarSalario(10);
+	public void aumentarSalario(double valor) {
+		this.novoValorSalario = valor;
+		if (valor <= 0) {
+			IllegalArgumentException erro = new IllegalArgumentException();
+			throw erro;
+		} else {
+			this.salario += valor;
+		}
 	}
 
 	public void bonificacao() {
