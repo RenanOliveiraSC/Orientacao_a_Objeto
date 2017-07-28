@@ -1,15 +1,15 @@
 package CompanhiaAeria;
-/**
- * 
- * @author Renan Oliveira
- *
- */
-abstract class Aviao {
-	
+
+
+public abstract class Aviao {
+
 	private final int lugares;
 	private final double valorPassagem;
-	
+
 	public Aviao(int lugares, double valorPassagem) {
+		if(lugares <= 0){
+			throw new IllegalArgumentException("Quantidade de lugares deve ser maior que zero.");
+		}
 		this.lugares = lugares;
 		this.valorPassagem = valorPassagem;
 	}
@@ -22,5 +22,5 @@ abstract class Aviao {
 		return valorPassagem;
 	}
 
-	
 }
+
