@@ -30,7 +30,8 @@ public class TesteContaCorrente {
 		for (ContaCorrente contaCorrente : lContas) {
 			System.out.println(contaCorrente.getConta());
 		}
-		
+		lContas.remove(0);
+		lContas.clear();
 		int quantidadeC = lContas.size();
 		System.out.println(quantidadeC);
 
@@ -43,7 +44,9 @@ public class TesteContaCorrente {
 			System.out.println(contaPoupanca.getConta());
 		}
 		int quantidadeP = lContas.size();
-		
+		lContasP.remove(1);
+		lContasP.clear();
+
 		System.out.println(quantidadeP);
 		
 	}
