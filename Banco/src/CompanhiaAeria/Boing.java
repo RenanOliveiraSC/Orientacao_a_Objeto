@@ -2,8 +2,8 @@ package CompanhiaAeria;
 
 public class Boing extends Aviao {
 
-	public Boing(int lugares, double valorPassagem) {
-		super(lugares, valorPassagem);
+	public Boing(int lugares) {
+		super(lugares, 100d);
 	}
 
 }

@@ -33,7 +33,16 @@ public class CompanhiaArea {
 	}
 
 	public double retornaFaturamentoPassagens(){
-		//TODO implmentar o calculo do faturamento
-		return 0d;
+		double faturamento = 0d;
+		for(Boing boing : getBoings()){
+			faturamento += boing.getValorPassagem() * boing.getLugares();
+			}
+		for(Monomotor monomotor : getMonomotores()){
+			faturamento += monomotor.getValorPassagem() * monomotor.getLugares();
+		}
+		for(Bimotor bimotor : getBimotores()){
+			faturamento += bimotor.getValorPassagem() * bimotor.getLugares();
+		}
+		return faturamento;
 	}
 }
