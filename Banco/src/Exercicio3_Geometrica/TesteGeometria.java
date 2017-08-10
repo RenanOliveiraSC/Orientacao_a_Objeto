@@ -11,13 +11,16 @@ public class TesteGeometria {
 		int forma;
 
 		List<Interface> formasGeometricas = new ArrayList<>();
-
+		//Perguntando ao usuário
 		System.out.println("Quantas formas ele deseja criar?");
+		//Armazenando a resposta do usuário
 		forma = Integer.parseInt(scanner.nextLine());
+		//De acordo com a resposta do usuário fazemos a repetição
 		for (int i = 0; i < forma; i++) {
 			System.out.println("Qual forma você deseja criar: 1 Quadrado, 2 Retanguolo ou 3 Circulo");
+			//Armazenando a resposta do usuário
 			int figura = Integer.parseInt(scanner.nextLine());
-
+			//
 			if (figura == 1) {
 				System.out.println("informe o lado do Quadrado");
 				double lado = Double.parseDouble(scanner.nextLine());
